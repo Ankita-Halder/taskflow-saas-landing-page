@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TaskFlow – Manage work smarter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="wrap nav">
+      <a href="#home" class="logo"><i>✓</i>TaskFlow</a>
+
+      <nav class="links" id="links" aria-label="Main">
+        <a href="#home" class="active">Home</a>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-dark">Get Started</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="wrap">
+        <h1>Manage Work Smarter and Keep Your <em>Team Aligned</em></h1>
+        <p>TaskFlow helps modern teams stay aligned, meet deadlines faster, and turn complex workflows into simple, actionable steps.</p>
+        <div class="cta">
+          <a href="#contact" class="btn btn-primary" data-plan="Free trial">Start Free Trial</a>
+          <a href="#contact" class="btn btn-light">Contact Sales</a>
+        </div>
+
+        <!-- Dashboard preview -->
+        <div class="shell" aria-label="TaskFlow dashboard preview">
+          <div class="app">
+
+            <aside class="panel side">
+              <div class="logo" style="margin-bottom:14px"><i>✓</i>TaskFlow</div>
+              <small>Menu</small>
+              <a class="on">Dashboard</a>
+              <a>Tasks</a>
+              <a>Projects</a>
+              <a>Analytics</a>
+              <a>Calendar</a>
+              <a>Team Members</a>
+              <a>Reports</a>
+              <a>Messages <span class="badge">5</span></a>
+            </aside>
+
+            <div>
+              <div class="panel top">
+                <div><b>Welcome back, Be! 👋</b><span>Here's what's happening with your team today</span></div>
+                <b class="user">Be Confidency</b>
+              </div>
+
+              <div class="cols">
+                <div>
+                  <div class="panel stats">
+                    <div class="stat s1"><b>156</b>Active Projects</div>
+                    <div class="stat s2"><b>82%</b>Utilization Rate</div>
+                    <div class="stat s3"><b>2.4 d</b>Average Time</div>
+                    <div class="stat s4"><b>3</b>At Risk Projects</div>
+                  </div>
+
+                  <div class="panel" style="margin-top:14px">
+                    <b class="ptitle">Task Status Distribution</b>
+                    <div class="status">
+                      <div style="border-color:#1e5aa8;color:#1e5aa8"><em>In Progress</em><b>67%</b><span></span></div>
+                      <div style="border-color:#10b981;color:#10b981"><em>Completed</em><b>24%</b><span></span></div>
+                      <div style="border-color:#f59e0b;color:#f59e0b"><em>Overdue</em><b>9%</b><span></span></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel">
+                  <div class="head">
+                    <div><b class="ptitle">Task Priority</b><br><small>Distribution by priority level</small></div>
+                    <button class="dots" id="dots" aria-label="Chart options">···</button>
+                    <div class="menu" id="menu">
+                      <button>View Details</button>
+                      <button>Change Date Range</button>
+                      <button>Export</button>
+                      <button>Refresh</button>
+                    </div>
+                  </div>
+                  <div class="donut" role="img" aria-label="Donut chart of task priorities"></div>
+                  <div class="legend"><span>● High: 40</span><span>● Medium: 26</span><span>● Low: 18</span></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section id="features">
+      <div class="wrap">
+        <h2>Everything your team needs to ship on time</h2>
+        <p class="sub">Plan, assign, and track work in one place, without the status meetings.</p>
+
+        <div class="grid3">
+          <div class="feat"><i>☑</i><h3>Task management</h3><p>Create tasks, set priorities and due dates, and see who owns what at a glance.</p></div>
+          <div class="feat"><i>▦</i><h3>Project boards</h3><p>Switch between list, board, and calendar views for every project.</p></div>
+          <div class="feat"><i>◔</i><h3>Live analytics</h3><p>Track utilization, average completion time, and projects at risk in real time.</p></div>
+          <div class="feat"><i>☺</i><h3>Team collaboration</h3><p>Comment on tasks, share files, and message teammates without leaving TaskFlow.</p></div>
+          <div class="feat"><i>🔔</i><h3>Smart reminders</h3><p>Get notified before deadlines slip and when a task is blocked.</p></div>
+          <div class="feat"><i>⇩</i><h3>Reports and export</h3><p>Export progress reports to PDF or CSV and share them with stakeholders.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HOW IT WORKS ===== -->
+    <section class="how" id="how">
+      <div class="wrap">
+        <h2>Up and running in three steps</h2>
+        <p class="sub">No setup calls and no training. Most teams start planning on day one.</p>
+
+        <div class="steps">
+          <div class="step"><h3>Create a workspace</h3><p>Sign up, name your team, and invite members by email.</p></div>
+          <div class="step"><h3>Add projects and tasks</h3><p>Import from a spreadsheet or start fresh. Assign owners and deadlines.</p></div>
+          <div class="step"><h3>Track progress together</h3><p>Follow the dashboard, fix at-risk work early, and share weekly reports.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section id="pricing">
+      <div class="wrap">
+        <h2>Simple pricing for every team</h2>
+        <p class="sub">Start free for 14 days. Cancel any time.</p>
+
+        <div class="toggle">
+          <span>Monthly</span>
+          <button class="sw" id="sw" aria-pressed="false" aria-label="Switch to yearly billing"></button>
+          <span>Yearly (save 20%)</span>
+        </div>
+
+        <div class="grid3">
+
+          <div class="plan">
+            <h3>Starter</h3>
+            <p class="desc">For small teams getting organised.</p>
+            <div class="price">$<span class="amt" data-m="9" data-y="7">9</span><small> /user/month</small></div>
+            <ul>
+              <li>Up to 10 members</li>
+              <li>5 active projects</li>
+              <li>Basic analytics</li>
+            </ul>
+            <a href="#contact" class="btn btn-light" data-plan="Starter">Choose Starter</a>
+          </div>
+
+          <div class="plan pop">
+            <h3>Team</h3>
+            <p class="desc">For growing teams that need clarity.</p>
+            <div class="price">$<span class="amt" data-m="19" data-y="15">19</span><small> /user/month</small></div>
+            <ul>
+              <li>Unlimited members</li>
+              <li>Unlimited projects</li>
+              <li>Advanced analytics and reports</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" data-plan="Team">Choose Team</a>
+          </div>
+
+          <div class="plan">
+            <h3>Enterprise</h3>
+            <p class="desc">For organisations with custom needs.</p>
+            <div class="price custom">Custom</div>
+            <ul>
+              <li>Everything in Team</li>
+              <li>Single sign-on</li>
+              <li>Dedicated manager</li>
+            </ul>
+            <a href="#contact" class="btn btn-light" data-plan="Enterprise">Contact Sales</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact-sec" id="contact">
+      <div class="wrap contact">
+
+        <div class="info">
+          <h2>Request a demo</h2>
+          <p>Tell us about your team and we'll show you how TaskFlow fits your workflow. We reply within one business day.</p>
+          <p>✉ hello@taskflow.example<br>☎ +91 98765 43210<br>⌖ Kolkata, West Bengal, India</p>
+        </div>
+
+        <form id="form" novalidate>
+          <label>Full name
+            <input id="name" autocomplete="name">
+            <span class="err"></span>
+          </label>
+
+          <label>Work email
+            <input id="email" type="email" autocomplete="email">
+            <span class="err"></span>
+          </label>
+
+          <label>Interested in
+            <select id="plan">
+              <option>Free trial</option>
+              <option>Starter</option>
+              <option>Team</option>
+              <option>Enterprise</option>
+            </select>
+          </label>
+
+          <label>Message
+            <textarea id="msg" rows="3"></textarea>
+            <span class="err"></span>
+          </label>
+
+          <button class="btn btn-primary" type="submit">Request demo</button>
+          <div class="ok" id="ok" role="status"></div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <div class="logo"><i>✓</i>TaskFlow</div>
+        <p>© 2026 TaskFlow. Sample project.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
